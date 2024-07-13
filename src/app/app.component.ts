@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'GATE';
+  title = 'G.A.T.E.';
+  subTitle = 'Galactic Archive Tracking Engine'
 }
