@@ -9,12 +9,14 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$gray-900: oklch(19.37% 0.006 300.98);
+
 // Define the theme object.
 $GATE-theme: mat.define-theme((
   color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
+    theme-type: dark,
+    primary: mat.$green-palette,
+    tertiary: mat.$cyan-palette,
   ),
   density: (
     scale: 0,
@@ -36,5 +38,12 @@ $GATE-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($GATE-theme);
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%; 
+  background: $gray-900;
+  color: #03c326;
+}
+body { 
+  margin: 0; 
+  font-family: "JetBrains Mono", monospace; 
+}
