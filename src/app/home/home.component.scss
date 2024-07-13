@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
     position: fixed;
     z-index: 0;
     background: #0000004d;
+    filter: hue-rotate(317deg) saturate(4.5) contrast(1.7);
 }
 
 .landing{
@@ -22,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .gate-container{
+    padding: 1rem;
     height: 80%;
     width: 80%;
     display: flex;
@@ -41,35 +43,38 @@ h1, h2, h3, h4, h5, h6, p {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 4rem;
-    text-shadow: 2px 2px green;
+    text-shadow: 2px 2px 80px lime;
 }
 
 .subtitle{
-    text-shadow: 1px 1px green;
+    text-shadow: 1px 1px 40px lime;
 }
 
+.globe{
+    padding: 1rem;
+}
 
 .button-wrapper{
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
 }
 
-.enter-btn{
+.enter-btn {
     padding: 0.5rem 4rem;
-    background: #00000000;
+    background: #051c0c36;
     color: #03c326;
-    border: 1px solid;
+    border: 2px solid;
     font-family: "JetBrains Mono";
     font-size: 14px;
     font-weight: 700;
-    box-shadow: 1px 1px green;
-    text-shadow: 1px 1px green;
-}
-.enter-btn:hover{
-    padding: 0.5rem 4rem;
-    background: #03c326;
-    color: #ffffff;
-    border: 1px solid;
+    box-shadow: 1px 1px 64px #0080008c, inset 1px 1px 0px;
+    text-shadow: 1px 1px 40px green;
+    transition: 1s ease;
 }
 
+.enter-btn:hover {
+    border-color: limegreen;
+    box-shadow: 1px 1px 63px #0080008c, inset 1px 1px 64px rgb(0 128 0 / 70%);
+    color: #00e507;
+}
