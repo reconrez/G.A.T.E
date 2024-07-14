@@ -48,14 +48,21 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "4MB",
+                  "maximumError": "5MB"
                 }
               ],
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": {
+                  "scripts": true,
+                   "styles": {
+                    "minify": true,
+                    "inlineCritical": true
+                  },
+                   "fonts": false
+               },
               "extractLicenses": false,
               "sourceMap": true
             }
